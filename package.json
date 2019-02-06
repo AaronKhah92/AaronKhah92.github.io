@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/AaronKhah92/acedev/issues"
   },
-  "homepage": "https://github.com/AaronKhah92/acedev#readme"
+  "homepage": "https://github.com/AaronKhah92/acedev#readme",
+  "dependencies": {
+    "animejs": "^3.0.1"
+  }
 }
