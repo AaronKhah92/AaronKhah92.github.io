@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style/main.css">
-  <title>Aarons Website</title>
+  <title>Aaron's Website</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 </head>
 <body id="bg-img">
   
@@ -48,13 +49,22 @@
     </nav>
   </header>
 
+
+
   <main id="home">
-    <h1 class="lg-heading">
+  <div >
+    <h1  class="lg-heading">
       Aaron <span class="secondary-text">Ahmadi</span>
     </h1>
-    <h2 class="sm-heading">
-      Web Developer with an eye for design
-    </h2>
+  </div>
+  
+      
+    
+    <div id="typed-strings">
+    <h2>Web Developer with an eye for design.</h2>
+    
+  </div>
+ <h2 class="sm-heading"> <span id="typed"></span></h2>
     <div class="icons">
       <a href="#">
         <i class="fab fa-twitter fa-2x"></i>
@@ -71,7 +81,15 @@
      
     </div>
   </main>
-
+  
   <script src="js/main.js"></script>
+  
+  <script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    loop: true,
+    typeSpeed: 80
+  });
+</script>
 </body>
 </html>
