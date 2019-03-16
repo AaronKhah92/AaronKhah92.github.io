@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/AaronKhah92/acedev/issues"
   },
-  "homepage": "https://github.com/AaronKhah92/acedev#readme",
+  
   "dependencies": {
     "animejs": "^3.0.1",
     "gh-pages": "^2.0.1",
