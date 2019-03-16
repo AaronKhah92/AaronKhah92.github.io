@@ -116,6 +116,50 @@ main {
   }
 }
 
+// Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #000 solid;
+
+    &:hover {
+      opacity:0.5;
+      border-color:$secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button styles 
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: darken($main-color, 50);
+  color: #fff;
+} 
+
+.btn-dark {
+  @extend .btn;
+  background: lighten($main-color, 50);
+  color: #333;
+} 
+
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -125,3 +169,4 @@ main {
 }
 
 @import 'mobile';
+

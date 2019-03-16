@@ -4,7 +4,9 @@
 }
 // Desktops & laptops
 @include mediaLg {
-
+  .projects {
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 //Tablets & small lapops
 @include mediaMd {
@@ -64,6 +66,10 @@
     grid-template-columns: 1fr;
 
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 //Smartphones
 @include mediaSm {
@@ -73,5 +79,9 @@
     text-align: center;
     align-items: center;
     font-size: 3rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
