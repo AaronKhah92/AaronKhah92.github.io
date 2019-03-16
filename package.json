@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Portfolio site belonging to Aaron Ahmadi",
   "main": "index.js",
+  "homepage": "https://AaronKhah92.github.io/acedev",
   "scripts": {
-    "sass": "node-sass -w sass/ -o style/ --recursive"
+    "sass": "node-sass -w sass/ -o dist/style/ --recursive",
+    "deploy": "gh-pages -d dist" 
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/AaronKhah92/acedev#readme",
   "dependencies": {
     "animejs": "^3.0.1",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "typed.js": "^2.0.10"
   }
