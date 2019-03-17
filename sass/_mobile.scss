@@ -82,11 +82,21 @@
 
     .lg-heading {
       margin-top:1rem;
-      font-size: 5rem;
+      font-size: 2rem;
     }
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+
+    div {
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+    }
   }
 }
