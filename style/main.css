@@ -159,8 +159,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'exercise1 exercise2 exercise3';
-  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -170,21 +169,11 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .exercise-1 {
-    grid-area: exercise1; }
-  .about-info .exercise-2 {
-    grid-area: exercise2; }
-  .about-info .exercise-3 {
-    grid-area: exercise3; }
-  .about-info .exercise {
-    background: #a7ebee;
-    padding: 0.5rem;
-    border-bottom: #0d4e74 5px solid; }
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); }
   .projects img {
     width: 100%;
     border: 3px #000 solid; }
@@ -192,6 +181,10 @@ main {
       opacity: 0.5;
       border-color: #0d4e74;
       transition: all 0.5s ease-out; }
+  .projects .item {
+    background: #56d8de;
+    padding: 0.5rem;
+    border-bottom: #0d4e74 5px solid; }
 
 .boxes {
   display: grid;
@@ -270,9 +263,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-brand .portrait img {
-      height: 150px;
-      width: 150px;
-      object-fit: cover; }
+      width: 120px;
+      height: 120px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'exercise1' 'exercise2' 'exercise3';
     grid-template-columns: 1fr; }
