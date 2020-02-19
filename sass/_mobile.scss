@@ -1,18 +1,17 @@
 // Wide Screens
 @include mediaXl {
-  
 }
 // Desktops & laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 //Tablets & small lapops
 @include mediaMd {
   main {
     align-items: center;
-    text-align: center;
+    text-align: left;
 
     .lg-heading {
       line-height: 1;
@@ -22,16 +21,13 @@
     .sm-heading {
       font-size: 1rem;
     }
-
-
   }
 
   ul.menu-nav,
   div.menu-brand {
-    float:none;
+    float: none;
     width: 100%;
-    min-height:0;
-    
+    min-height: 0;
 
     &.show {
       transform: translate3d(0, 0, 0);
@@ -51,20 +47,15 @@
     .portrait img {
       width: 120px;
       height: 120px;
-     
     }
   }
 
   .about-info {
-    grid-template-areas: 
-    'bioimage'
-    'bio'
-    'exercise1'
-    'exercise2'
-    'exercise3';
+    grid-template-areas:
+      "bioimage"
+      "bio";
 
     grid-template-columns: 1fr;
-
   }
 
   .projects {
@@ -72,16 +63,11 @@
   }
 
   .boxes {
-    grid-template-columns:  1fr;
-
-
-  
+    grid-template-columns: 1fr;
   }
-  
 }
 //Smartphones
 @include mediaSm {
-  
   main {
     padding: 2rem;
     #home h1 {
@@ -89,7 +75,7 @@
     }
 
     .lg-heading {
-      margin-top:1rem;
+      margin-top: 1rem;
       font-size: 2rem;
     }
   }
@@ -100,7 +86,6 @@
 
   .boxes {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-
 
     div {
       padding: 0.75rem 1.25rem;
