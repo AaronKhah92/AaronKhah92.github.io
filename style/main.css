@@ -94,11 +94,12 @@
 
 body {
   background: #81e2e6;
-  color: set-text-color #81e2e6;
-  height: 100%;
+  color: #000;
+  min-height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
@@ -159,7 +160,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio';
+  grid-template-areas: "bioimage bio bio";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -168,7 +169,8 @@ main {
     border: #0d4e74 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
 
 .projects {
   display: grid;
@@ -186,11 +188,51 @@ main {
     padding: 0.5rem;
     border-bottom: #0d4e74 5px solid; }
 
+.row-wrapper {
+  display: flex;
+  height: 100%; }
+  .row-wrapper .side-resume {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 40%;
+    padding: 20px; }
+    .row-wrapper .side-resume .name-title {
+      font-size: 36px;
+      margin: 0; }
+    .row-wrapper .side-resume .profession {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 40px; }
+    .row-wrapper .side-resume .cv-picture-wrapper {
+      margin-bottom: 40px; }
+      .row-wrapper .side-resume .cv-picture-wrapper img {
+        border-radius: 50%;
+        border: 2px solid white; }
+    .row-wrapper .side-resume .resume-desc-wrapper {
+      text-align: left; }
+      .row-wrapper .side-resume .resume-desc-wrapper .highlight-resume {
+        font-weight: bold; }
+    .row-wrapper .side-resume .resume-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .row-wrapper .side-resume .resume-info-wrapper .icon .delimeter {
+        margin: 0px 8px; }
+      .row-wrapper .side-resume .resume-info-wrapper .icon .icon-content {
+        display: inline-block; }
+        .row-wrapper .side-resume .resume-info-wrapper .icon .icon-content .icon-title {
+          margin: 0; }
+        .row-wrapper .side-resume .resume-info-wrapper .icon .icon-content .icon-text {
+          margin: 0; }
+
 .boxes {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  /* display: flex;
+  /*   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -198,11 +240,10 @@ main {
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem  2.5rem;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #0d4e74;
       color: #fff; }
       .boxes div:hover span {
@@ -241,7 +282,7 @@ main {
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: left; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -266,7 +307,7 @@ main {
       width: 120px;
       height: 120px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'exercise1' 'exercise2' 'exercise3';
+    grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
